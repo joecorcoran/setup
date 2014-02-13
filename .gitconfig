@@ -1,0 +1,17 @@
+[user]
+	name = Joe Corcoran
+	email = joecorcoran@gmail.com
+[core]
+	excludesfile = /Users/joecorcoran/.gitignore_global
+[github]
+	user = joecorcoran
+[alias]
+  l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\""
+[merge]
+  tool = p4merge
+[diff]
+  tool = p4diff
+[branch]
+	autosetuprebase = always
+[push]
+	default = upstream
