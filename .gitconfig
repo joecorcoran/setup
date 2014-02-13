@@ -6,11 +6,11 @@
 [github]
 	user = joecorcoran
 [alias]
-  l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\""
+	l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\""
 [merge]
-  tool = p4merge
+	tool = p4merge
 [diff]
-  tool = p4diff
+	tool = p4diff
 [branch]
 	autosetuprebase = always
 [push]
