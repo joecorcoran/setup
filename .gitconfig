@@ -2,11 +2,14 @@
 	name = Joe Corcoran
 	email = joecorcoran@gmail.com
 [core]
-	excludesfile = /Users/joecorcoran/.gitignore_global
+	excludesfile = /Users/joe/.gitignore_global
 [github]
 	user = joecorcoran
 [alias]
-	l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\""
+	l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\" && echo -e '\n'"
+	p = "pull origin master"
+	u = "push origin master"
+	o = "rebase -i HEAD~2"
 [merge]
 	tool = p4merge
 [diff]
@@ -15,3 +18,8 @@
 	autosetuprebase = always
 [push]
 	default = upstream
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[color]
+	ui = true
