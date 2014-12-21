@@ -49,4 +49,4 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # docker
-$(boot2docker shellinit &>/dev/null)
+$(boot2docker shellinit)
