@@ -47,6 +47,3 @@ PS1='\w $(git_ps1_fast)\$ '
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# docker
-$(boot2docker shellinit)
