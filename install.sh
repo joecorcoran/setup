@@ -1,8 +1,8 @@
 #!/bin/sh
 
-apt-get update
-apt-get remove vim-tiny
-apt-get install vim tmux
+apt-get update -y
+apt-get remove -y vim-tiny
+apt-get install -y vim tmux
 
 files=".vimrc .tmux.conf .tmux/3.tmux"
 mkdir ~/.tmux
