@@ -43,7 +43,3 @@ function git_ps1_fast() {
   done
 }
 PS1='\w $(git_ps1_fast)\$ '
-
-# chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
