@@ -11,7 +11,7 @@ apt-get remove -y vim-tiny
 apt-get install -y vim tmux
 
 # Install Vundle
-if [ ! -d "~/.vim/bundle" ]; then
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
