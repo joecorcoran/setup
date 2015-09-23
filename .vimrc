@@ -26,7 +26,7 @@ set nowritebackup
 set noswapfile
 
 " Visual whitespace
-set listchars=tab:>∙,trail:∙
+set listchars=tab:>~,trail:~
 
 " Auto-source updates to this file
 autocmd bufwritepost .vimrc source $MYVIMRC
