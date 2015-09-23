@@ -16,8 +16,10 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 
 # Copy config files
+if [ ! -d ~/.tmux ]; then
+  mkdir ~/.tmux
+fi
 files=".vimrc .tmux.conf .tmux/3.tmux"
-mkdir ~/.tmux
 for file in $files; do
   curl "https://raw.githubusercontent.com/joecorcoran/setup/master/$file" > ~/$file
 done
