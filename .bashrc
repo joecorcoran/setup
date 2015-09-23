@@ -42,4 +42,4 @@ function git_ps1_fast() {
     dir="${dir%/*}"
   done
 }
-PS1='\w $(git_ps1_fast)\$ '
+PS1='(\u@\h) \w $(git_ps1_fast)\$ '
