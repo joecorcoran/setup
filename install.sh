@@ -10,6 +10,9 @@ locale-gen en_US.UTF-8
 apt-get remove -y vim-tiny
 apt-get install -y vim tmux
 
+# Set Vim as default editor
+update-alternatives --set editor /usr/bin/vim.basic
+
 # Install Vundle
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
