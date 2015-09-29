@@ -6,7 +6,7 @@
 [github]
 	user = joecorcoran
 [alias]
-	l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\" && echo -e '\n'"
+	l = "!git --no-pager log --color -n 5 --pretty=format:\"%Cgreen%h %C(bold yellow)%ar %C(bold blue)%an %Creset%s\""
 	p = "pull origin master"
 	u = "push origin master"
 	o = "rebase -i HEAD~2"
