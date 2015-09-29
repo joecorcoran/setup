@@ -22,7 +22,7 @@ fi
 if [ ! -d ~/.tmux ]; then
   mkdir ~/.tmux
 fi
-files=".bashrc .vimrc .tmux.conf .tmux/3.tmux"
+files=".bashrc .gitconfig .tmux.conf .tmux/3.tmux .vimrc"
 for file in $files; do
   curl "https://raw.githubusercontent.com/joecorcoran/setup/master/$file" > ~/$file
 done
