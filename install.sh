@@ -29,5 +29,3 @@ done
 
 # Install Vim plugins
 vim +PluginInstall +qall
-
-
