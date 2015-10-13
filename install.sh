@@ -26,3 +26,8 @@ files=".bashrc .gitconfig .tmux.conf .tmux/3.tmux .vimrc"
 for file in $files; do
   curl "https://raw.githubusercontent.com/joecorcoran/setup/master/$file" > ~/$file
 done
+
+# Install Vim plugins
+vim +PluginInstall +qall
+
+
