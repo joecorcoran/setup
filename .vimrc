@@ -31,8 +31,9 @@ set listchars=tab:>~,trail:~
 " Auto-source updates to this file
 autocmd bufwritepost .vimrc source $MYVIMRC
 
-" Map CtrlP plugin to Ctrl-T
+" CtrlP
 let g:ctrlp_map = '<c-t>'
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden --ignore .git -g ""'
 
 " Force the habit
 noremap <Up> <NOP>
