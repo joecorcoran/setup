@@ -13,6 +13,9 @@ apt-get install -y vim tmux
 # Set Vim as default editor
 update-alternatives --set editor /usr/bin/vim.basic
 
+# Install ag
+apt-get install silversearcher-ag
+
 # Install Vundle
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
