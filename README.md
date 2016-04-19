@@ -1,3 +1,3 @@
 ```
-curl https://raw.githubusercontent.com/joecorcoran/setup/master/install.sh | sudo sh
+curl https://raw.githubusercontent.com/joecorcoran/setup/master/install-mac.sh | sudo sh
 ```
