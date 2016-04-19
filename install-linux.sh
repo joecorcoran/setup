@@ -21,13 +21,9 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-# Copy config files
-if [ ! -d ~/.tmux ]; then
-  mkdir ~/.tmux
-fi
-files=".bashrc .gitconfig .tmux.conf .tmux/3.tmux .vimrc"
+files=".bashrc .gitconfig .tmux.conf .vimrc"
 for file in $files; do
-  curl "https://raw.githubusercontent.com/joecorcoran/setup/master/$file" > ~/$file
+  ln -s $HOME/Projects/setup/$file $HOME/$file
 done
 
 # Install Vim plugins
