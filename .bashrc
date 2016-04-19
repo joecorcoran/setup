@@ -2,6 +2,8 @@
 export HISTCONTROL=ignoredups
 # and ignore same sucessive entries
 export HISTCONTROL=ignoreboth
+# set editor
+export EDITOR=vim
 
 # make bash autocomplete with up arrow
 bind '"\e[A":history-search-backward'
