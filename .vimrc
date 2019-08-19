@@ -33,7 +33,11 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 
 " CtrlP
 let g:ctrlp_map = '<c-t>'
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden --ignore .git -g ""'
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 " Force the habit
 noremap <Up> <NOP>
