@@ -1,6 +1,6 @@
 [user]
 	name = Joe Corcoran
-	email = joe@corcoran.io
+	email = joe@corcoran.online
 [core]
 	excludesfile = /Users/joe/.gitignore_global
 [github]
