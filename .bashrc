@@ -3,7 +3,8 @@ export HISTCONTROL=ignoredups
 # and ignore same sucessive entries
 export HISTCONTROL=ignoreboth
 # set editor
-export EDITOR=vim
+export EDITOR=nvim
+alias vim=nvim
 
 # make bash autocomplete with up arrow
 bind '"\e[A":history-search-backward'
@@ -44,4 +45,20 @@ function git_ps1_fast() {
     dir="${dir%/*}"
   done
 }
-PS1='(\u@\h) \w $(git_ps1_fast)\$ '
+PS1='\w $(git_ps1_fast)\$ '
+
+# Ruby
+eval "$(rbenv init -)"
+
+# Dalia specific stuff
+eval "$($HOME/.dalek/bin/dalek init -)"
+# LM staging
+#export LATANA_METRICS_API_ENDPOINT="https://latanametrics.staging.daliaresearch.com"
+#export LATANA_METRICS_AUTH_TOKEN="piCajx4VQkEryhfzOEIaZCzWXzJF4DTVYMl99PoLLNI="
+# LM production
+export LATANA_METRICS_API_ENDPOINT="https://metrics.latana.com"
+export LATANA_METRICS_AUTH_TOKEN="e//uJdx7IZpgHQvxgq19Figp6y3SBLNPIu1COpOBwmA="
+alias lm="$HOME/Projects/lm/target/release/lm"
+
+# added by travis gem
+[ -f /Users/joe.corcoran/.travis/travis.sh ] && source /Users/joe.corcoran/.travis/travis.sh

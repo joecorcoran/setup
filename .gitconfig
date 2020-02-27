@@ -1,6 +1,7 @@
 [user]
 	name = Joe Corcoran
 	email = joe@corcoran.online
+	signingkey = C3398A79582B694B
 [core]
 	excludesfile = /Users/joe/.gitignore_global
 [github]
@@ -26,3 +27,5 @@
 	ui = true
 [remote "origin"]
 	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+[commit]
+	gpgsign = true

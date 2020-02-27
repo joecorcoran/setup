@@ -1,24 +1,14 @@
-" Vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin(stdpath('data') . '/plugged')
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'iCyMind/NeoSolarized'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
+Plug 'rust-lang/rust.vim'
+call plug#end()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-sleuth'
-Plugin 'rust-lang/rust.vim'
-
-call vundle#end()
-filetype plugin indent on
-" Vundle end
-
-" Solarized
-syntax enable
+set termguicolors
 set background=dark
-colorscheme solarized
+colorscheme NeoSolarized
 
 " Don't write garbage files
 set nobackup
@@ -51,3 +41,6 @@ inoremap <Right> <NOP>
 
 " Don't screw up code pasting
 set pastetoggle=<F5>
+
+" Format Rust code on save
+let g:rustfmt_autosave = 1
