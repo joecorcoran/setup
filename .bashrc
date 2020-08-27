@@ -50,8 +50,6 @@ PS1='\w $(git_ps1_fast)\$ '
 # Ruby
 eval "$(rbenv init -)"
 
-# Dalia specific stuff
-eval "$($HOME/.dalek/bin/dalek init -)"
 # LM staging
 #export LATANA_METRICS_API_ENDPOINT="https://latanametrics.staging.daliaresearch.com"
 #export LATANA_METRICS_AUTH_TOKEN="piCajx4VQkEryhfzOEIaZCzWXzJF4DTVYMl99PoLLNI="
