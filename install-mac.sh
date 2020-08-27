@@ -4,7 +4,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Essentials
-brew install git tmux neovim ruby-install chruby ripgrep
+brew install git tmux neovim rbenv chruby ripgrep
 
 # Setup
 if [ ! -d $HOME/Projects ]; then
